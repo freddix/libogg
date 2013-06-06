@@ -1,12 +1,12 @@
 Summary:	Ogg Bitstream Library
 Name:		libogg
-Version:	1.3.0
+Version:	1.3.1
 Release:	1
 Epoch:		2
 License:	BSD
 Group:		Libraries
 Source0:	http://downloads.xiph.org/releases/ogg/%{name}-%{version}.tar.gz
-# Source0-md5:	0a7eb40b86ac050db3a789ab65fe21c2
+# Source0-md5:	ba526cd8f4403a5d351a9efaa8608fbc
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://www.xiph.org/ogg/
 BuildRequires:	autoconf
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	m4datadir=%{_aclocaldir}
 
-mv -f $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version} devel-docs
+%{__mv} $RPM_BUILD_ROOT%{_docdir}/%{name} devel-docs
 
 %clean
 rm -rf $RPM_BUILD_ROOT
