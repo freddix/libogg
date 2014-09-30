@@ -1,12 +1,13 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/.git
 Summary:	Ogg Bitstream Library
 Name:		libogg
 Version:	1.3.1
-Release:	1
+Release:	2
 Epoch:		2
 License:	BSD
 Group:		Libraries
-Source0:	http://downloads.xiph.org/releases/ogg/%{name}-%{version}.tar.gz
-# Source0-md5:	ba526cd8f4403a5d351a9efaa8608fbc
+Source0:	http://downloads.xiph.org/releases/ogg/%{name}-%{version}.tar.xz
+# Source0-md5:	ca25d8da0ddfc8c6cbbf78d847a209fe
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://www.xiph.org/ogg/
 BuildRequires:	autoconf
